@@ -1,1 +1,15 @@
 
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/authn-service"
+    schedule:
+      interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "dominicnguyen"
+    reviewers:
+      - "richardbarron"
+    commit-message:
+      prefix: "pip"
