@@ -1,4 +1,14 @@
-```requirements.txt
-...
-django==2.1.0
-```
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/authn-service"
+    schedule:
+      interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "dennisjly"
+    reviewers:
+      - "dragonsengineer"
+    commit-message:
+      prefix: "pip"
